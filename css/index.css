@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-flow: column;
   margin:0 auto;
+  justify-content: center;
 }
 header{
 	background: url(../img/2-layers.jpg) 0 0 no-repeat;
@@ -257,7 +258,6 @@ box-shadow: 0px 0px 1px 1px rgba(61,60,61,0.1);
 }
 .comments{
 background-color: #f5f6f8;
-height: 1000px;
 
 }
 .comments__container{
@@ -317,43 +317,115 @@ margin: 0 50px;
 .comments__container span a:hover{
 	color: grey;
 }
+
+.clickers {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+justify-content: space-between;
+}
+
 .left_click{
-	position: relative;
-	left: 0;
-	top: -220px;
-	width: 15px;
-	height: 30px;
+	display: inline-block;
+	align-self:flex-start;
 }
 .right_click{
-		position: relative;
-	right: -1100px;
-	top: -253px;
-	width: 15px;
-	height: 30px;
+	display: inline;
+	align-self:flex-end;
 }
-.comments__radioBtn{
+.comments__slider__Btn{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
+	margin: 50px 0;
 }
-.comments__radioBtn input{
-	margin-left:10px;
+.comments__slider__Btn img{
+	margin:17px;
 }
-.comments__radioBtn___item1{
-	background-color: #999999;
+.form{
+	background-color: #3b404c;
+	color: #fff;
 }
-.comments__radioBtn___item2{
-background-color: #202635;
+.footer_menu{
+	margin-top:84px;
+	display: flex;
+	justify-content: space-between;
 }
-.comments__radioBtn___item3{
-background-color: #3a3f4b;
+.footer__title{
+	font-size: 34px;
+}
+.footer_menu nav ul li a{
+	color: #ffffff;
+	font-size: 22px;
+	opacity: 1;
+}
+.footer_menu nav ul li a:hover{
+	opacity: 0.5;
+	color: #f3f3f3;
+}
+.form	{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top:80px;
+}
+.form aside {
+	text-align: left;
+}
+.form aside h3{
+	text-transform: uppercase;
+	text-align: left;
+	margin: 20px 0;
 }
 
+.form aside p {
+	color: #999999;
+}
 
+.form form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	margin-left: 115px;
+}
+.form form  label{
+		font-size: 24px;
+}
+.form form input{
+	width: 360px;
+	margin: 5px 0;
+  padding: 10px 10px 10px 15px;
+  display: block;
+  border: none;
+  border-radius: 0;
+	font-size: 22px;
+	color: #fff;
+	background: transparent;
+  border-bottom: 2px solid #00a5ff;
 
+}
+.form form>div{
+	flex: 0 50%;
+}
+.form__name{
+	margin-right:60px;
+}
+.form_subj{
 
+}
+.form__msg{
+
+}
 
 
